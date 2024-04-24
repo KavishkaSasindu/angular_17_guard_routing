@@ -4,8 +4,8 @@ import { CanActivateFn } from '@angular/router';
 import { dashboardUserGuard } from './dashboard-user.guard';
 
 describe('dashboardUserGuard', () => {
-  const executeGuard: CanActivateFn = (...guardParameters) => 
-      TestBed.runInInjectionContext(() => dashboardUserGuard(...guardParameters));
+  const executeGuard: CanActivateFn = (...guardParameters) =>
+      TestBed.runInInjectionContext(() => dashboardUserGuard());
 
   beforeEach(() => {
     TestBed.configureTestingModule({});

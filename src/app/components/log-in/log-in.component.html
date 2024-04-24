@@ -1,1 +1,23 @@
-<p>log-in works!</p>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <form action="" #formData="ngForm" (ngSubmit)="logInUser(formData)" class="form-control">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="email" name="username" id="username" class="form-control" placeholder="email@gmail.com" ngModel required>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="form-control" placeholder="***********" minlength="6" ngModel required>
+        </div>
+        <br>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">LogIn</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
